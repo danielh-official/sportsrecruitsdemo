@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Main from '@/components/layouts/Main.vue';
-import { whoami } from '@/routes';
+import { home, whoami } from '@/routes';
 import { Head } from '@inertiajs/vue3';
 
 interface Requirement {
@@ -138,6 +138,9 @@ const placesWhereYouCanFindMe = [
                     <a :href="place.url" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">{{ place.name }}</a>
                 </li>
             </ul>
+        </div>
+        <div class="mt-12 text-center">
+            <a :href="home().url" class="text-blue-500 hover:underline">Return Home 🏠</a>
         </div>
     </Main>
 </template>
