@@ -106,7 +106,7 @@ const placesWhereYouCanFindMe = [
         <h1 class="text-4xl font-bold">How do I fit with what you're looking for?</h1>
         <h2 class="text-2xl font-bold">Must-Haves</h2>
         <div class="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 text-center">
-            <div class="flex w-full items-center gap-4 text-left" v-for="(requirement, index) in mustHaveRequirements" :key="index">
+            <div class="w-full items-center gap-4 text-left" v-for="(requirement, index) in mustHaveRequirements" :key="index">
                 <input type="checkbox" checked disabled /> {{ requirement.name }}
                 <div v-if="requirement.additionalInfo" class="text-sm text-gray-500">
                     {{ requirement.additionalInfo }}
@@ -115,7 +115,7 @@ const placesWhereYouCanFindMe = [
         </div>
         <h2 class="mt-12 text-2xl font-bold">Nice-to-Haves</h2>
         <div class="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 text-center">
-            <div class="flex w-full items-center gap-4 text-left" v-for="(requirement, index) in niceToHaveRequirements" :key="index">
+            <div class="w-full items-center gap-4 text-left" v-for="(requirement, index) in niceToHaveRequirements" :key="index">
                 <input type="checkbox" checked disabled /> {{ requirement.name }}
                 <div v-if="requirement.additionalInfo" class="text-sm text-gray-500">
                     {{ requirement.additionalInfo }}
