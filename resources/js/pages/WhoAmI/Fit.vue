@@ -132,7 +132,7 @@ const placesWhereYouCanFindMe = [
             <p class="text-left" v-html="consideration.answer"></p>
         </div>
         <h2 class="mt-12 text-2xl font-bold">This is all great. Where else can we find you?</h2>
-        <div>
+        <div class="mx-auto flex w-full max-w-2xl flex-col gap-6 text-center">
             <ul class="list-inside list-disc text-left">
                 <li v-for="(place, index) in placesWhereYouCanFindMe" :key="index">
                     <a :href="place.url" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">{{ place.name }}</a>
