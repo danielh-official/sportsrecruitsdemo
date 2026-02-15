@@ -18,8 +18,5 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
-        <footer class="text-center text-sm text-gray-500 py-4">
-            &copy; {{ date('Y') }} Daniel Haven. All rights reserved.
-        </footer>
     </body>
 </html>

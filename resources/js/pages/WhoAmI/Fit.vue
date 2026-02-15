@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Main from '@/components/layouts/Main.vue';
 import { home, whoami } from '@/routes';
-import { Head } from '@inertiajs/vue3';
+import { Head, Link } from '@inertiajs/vue3';
 
 interface Requirement {
     name: string;
@@ -101,7 +101,7 @@ const placesWhereYouCanFindMe = [
     <Head title="Determining Fit" />
     <Main>
         <div>
-            <p><a :href="whoami().url" class="text-blue-500 hover:underline">&larr; Go Back</a></p>
+            <p><Link :href="whoami().url" class="text-blue-500 hover:underline">&larr; Go Back</Link></p>
         </div>
         <h1 class="text-4xl font-bold">How do I fit with what you're looking for?</h1>
         <h2 class="text-2xl font-bold">Must-Haves</h2>
@@ -140,7 +140,7 @@ const placesWhereYouCanFindMe = [
             </ul>
         </div>
         <div class="mt-12 text-center">
-            <a :href="home().url" class="text-blue-500 hover:underline">Return Home 🏠</a>
+            <Link :href="home().url" class="text-blue-500 hover:underline">Return Home 🏠</Link>
         </div>
     </Main>
 </template>

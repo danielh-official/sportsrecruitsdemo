@@ -2,14 +2,14 @@
 import Main from '@/components/layouts/Main.vue';
 import { home } from '@/routes';
 import { fit } from '@/routes/whoami';
-import { Head } from '@inertiajs/vue3';
+import { Head, Link } from '@inertiajs/vue3';
 </script>
 
 <template>
     <Head title="Who Am I" />
     <Main>
         <div>
-            <p><a :href="home().url" class="text-blue-500 hover:underline">&larr; Go Back</a></p>
+            <p><Link :href="home().url" class="text-blue-500 hover:underline">&larr; Go Back</Link></p>
         </div>
         <div class="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 text-center">
             <div>
@@ -42,7 +42,7 @@ import { Head } from '@inertiajs/vue3';
             <div>
                 <p class="mb-2 text-xl italic">That's all fine and dandy&hellip;</p>
                 <p class="mb-2 text-2xl">But how do you fit with what we're looking for?</p>
-                <p><a :href="fit().url" class="text-blue-500 underline hover:text-blue-700">Click here to find out why I'd make a great fit</a></p>
+                <p><Link :href="fit().url" class="text-blue-500 underline hover:text-blue-700">Click here to find out why I'd make a great fit</Link></p>
             </div>
         </div>
     </Main>
