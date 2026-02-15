@@ -42,7 +42,9 @@ import { Head, Link } from '@inertiajs/vue3';
             <div>
                 <p class="mb-2 text-xl italic">That's all fine and dandy&hellip;</p>
                 <p class="mb-2 text-2xl">But how do you fit with what we're looking for?</p>
-                <p><Link :href="fit().url" class="text-blue-500 underline hover:text-blue-700">Click here to find out why I'd make a great fit</Link></p>
+                <p>
+                    <Link :href="fit().url" class="text-blue-500 underline hover:text-blue-700">Click here to find out why I'd make a great fit</Link>
+                </p>
             </div>
         </div>
     </Main>
