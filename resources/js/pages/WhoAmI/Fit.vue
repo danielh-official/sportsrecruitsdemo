@@ -128,7 +128,7 @@ const placesWhereYouCanFindMe = [
             :key="index"
             class="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 text-center"
         >
-            <blockquote class="my-4 border-l-4 border-gray-300 bg-gray-50 p-4 text-gray-700 italic">{{ consideration.question }}</blockquote>
+            <blockquote class="my-4 border-l-4 border-gray-300 bg-gray-50 p-4 text-gray-700 italic dark:bg-gray-800 dark:text-gray-200">{{ consideration.question }}</blockquote>
             <p class="text-left" v-html="consideration.answer"></p>
         </div>
         <h2 class="mt-12 text-2xl font-bold">This is all great. Where else can we find you?</h2>
