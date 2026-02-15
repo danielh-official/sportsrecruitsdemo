@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { Head, Link } from '@inertiajs/vue3';
 import Main from '@/components/layouts/Main.vue';
 import { home, whoami } from '@/routes';
-import { Head, Link } from '@inertiajs/vue3';
 
 interface Requirement {
     name: string;

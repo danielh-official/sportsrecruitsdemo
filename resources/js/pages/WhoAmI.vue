@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import { Head, Link } from '@inertiajs/vue3';
 import Main from '@/components/layouts/Main.vue';
 import { home } from '@/routes';
 import { fit } from '@/routes/whoami';
-import { Head, Link } from '@inertiajs/vue3';
 </script>
 
 <template>

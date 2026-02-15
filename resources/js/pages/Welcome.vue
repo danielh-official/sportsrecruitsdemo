@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { Head, Link } from '@inertiajs/vue3';
 import Main from '@/components/layouts/Main.vue';
 import { whoami } from '@/routes';
-import { Head, Link } from '@inertiajs/vue3';
 </script>
 
 <template>
