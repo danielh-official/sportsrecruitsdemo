@@ -36,7 +36,7 @@ const version = computed(() => {
         <div v-if="version">
             Current Version:
             <a
-                :href="`https://github.com/danielh-official/sportsrecruitsdemo/tag/v${version}`"
+                :href="`https://github.com/danielh-official/sportsrecruitsdemo/releases/tag/v${version}`"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-blue-500 hover:underline"
