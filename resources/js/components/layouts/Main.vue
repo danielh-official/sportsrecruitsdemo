@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { version } = defineProps<{
-    version: string;
+    version?: string;
 }>();
 </script>
 
