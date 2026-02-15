@@ -35,6 +35,7 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        // $version = config('app.version');
         $version = trim(shell_exec('git describe --tags --always --dirty'));
 
         return [

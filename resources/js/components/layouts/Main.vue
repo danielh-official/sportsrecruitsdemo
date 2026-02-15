@@ -1,11 +1,23 @@
 <script setup lang="ts">
-const { version } = defineProps<{
-    version?: string;
-}>();
+import { usePage } from '@inertiajs/vue3';
+import { computed } from 'vue';
+
+interface Page {
+    props: {
+        version: string;
+    };
+}
+
+const page: Page = usePage();
+
+const version = computed(() => {
+    return page.props.version;
+});
 </script>
 
 <template>
-    <div class="flex min-h-screen flex-col items-center justify-center bg-[#FDFDFC] p-20 text-[#1b1b18] dark:bg-[#0a0a0a] dark:text-[#fdfdfc]">
+    <div
+        class="flex min-h-screen flex-col items-center justify-center bg-[#FDFDFC] p-20 text-[#1b1b18] dark:bg-[#0a0a0a] dark:text-[#fdfdfc]">
         <main class="flex w-full max-w-4xl flex-col gap-10 rounded-lg">
             <slot />
         </main>
@@ -14,13 +26,8 @@ const { version } = defineProps<{
         <div>&copy; {{ new Date().getFullYear() }} Daniel Haven. All rights reserved.</div>
         <div>
             The repository for this website is available at
-            <a
-                href="https://github.com/danielh-official/sportsrecruitsdemo"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-500 hover:underline"
-                >GitHub</a
-            >
+            <a href="https://github.com/danielh-official/sportsrecruitsdemo" target="_blank" rel="noopener noreferrer"
+                class="text-blue-500 hover:underline">GitHub</a>
         </div>
         <div v-if="version">Current Version: {{ version }}</div>
     </footer>
