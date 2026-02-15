@@ -12,6 +12,16 @@ const { version } = defineProps<{
     </div>
     <footer class="flex flex-col gap-2 py-4 text-center text-sm text-gray-500">
         <div>&copy; {{ new Date().getFullYear() }} Daniel Haven. All rights reserved.</div>
+        <div>
+            This repository is available at
+            <a
+                href="https://github.com/danielh-official/sportsrecruitsdemo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-500 hover:underline"
+                >GitHub</a
+            >
+        </div>
         <div v-if="version">Current Version: {{ version }}</div>
     </footer>
 </template>
