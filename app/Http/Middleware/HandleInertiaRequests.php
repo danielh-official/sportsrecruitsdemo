@@ -35,12 +35,15 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+        $version = trim(shell_exec('git describe --tags --always --dirty'));
+
         return [
             ...parent::share($request),
             'name' => config('app.name'),
             'auth' => [
                 'user' => $request->user(),
             ],
+            'version' => $version,
         ];
     }
 }
